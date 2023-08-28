@@ -1,6 +1,7 @@
 Captcha Integration in an existing website. 
 
-Here I've made instagram cloning & integrated captcha in the signup & login page through HTML CSS & PHP
+Here I've made instagram cloning & integrated captcha in the signup & login page through HTML CSS & PHP & MySQL database.
+
 
 Screenshots :
 
