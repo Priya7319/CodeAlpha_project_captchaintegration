@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/instasignup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://www.google.com/recaptcha/api.js"
+    async defer></script>
+</head>
+<body>
+
+
+  <script>
+    window.onload = function() {
+    var recaptcha = document.forms["f2"]["g-recaptcha-response"];
+    recaptcha.required = true;
+    recaptcha.oninvalid = function(e) {
+    alert("Captcha Error: " + "Invalid Captcha");
+    }
+    }
+    </script>
+    
+    
+    <main>
+        <div class="page">
+            <div class="header">
+              <h1 class="logo"><i class="fa fa-instagram-f"></i>Instagram</h1>
+              <p>Sign up to see photos and videos from your friends.</p>
+              <button><i class="fa fa-facebook-f"></i> Log in with Facebook</button>
+              <div>
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <div class="container">
+              <form name="f2" action="php/authentication.php" method="post">
+                <input type="text" name="mail_id" placeholder="ENter your mail id" required>
+                <input type="text" name="full_name" placeholder="Enter your Full Name" required>
+                <input type="text" name="user_id" placeholder="create your username" required>
+                <input type="password" name="pass" placeholder="create your password" required>
+                <div class="g-recaptcha" data-sitekey="6LfzFrgnAAAAAOmSViFEqQJRp9E19pQYTgkfiNWP" required></div>
+                <button>Sign up</button>
+              </form>
+              
+              <ul>
+                <li>By signing up, you agree to our</li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Data Policy</a></li>
+                <li>and</li>
+                <li><a href="">Cookies Policy</a> .</li>
+             </ul>
+            </div>
+        </div>
+        <div class="option">
+           <p>Have an account? <a href="insta.html">Log in</a></p>
+        </div>
+        <div class="otherapps">
+          <p>Get the app.</p>
+          <button type="button"><i class="fab fa-apple"></i> App Store</button>
+          <button type="button"><i class="fab fa-google-play"></i> Google Play</button>
+        </div>
+        <div class="footer">
+          <ul>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">HELP</a></li>
+            <li><a href="">PRESS</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">JOBS</a></li>
+            <li><a href="">PRIVACY</a></li>
+            <li><a href="">TEMS</a></li>
+            <li><a href="">LOCATIONS</a></li>
+            <li><a href="">TOP ACCOUNTS</a></li>
+            <li><a href="">HASHTAGS</a></li>
+            <li><a href="">LANGUAGE</a></li>
+          </ul>
+          <p>© 2020 PICTUREGRAM</p>
+        </div>
+      </main>
+      
+
+
+
+</body>
+</html>
