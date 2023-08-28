@@ -6,6 +6,8 @@ Screenshots :
 
 ![image](https://github.com/Priya7319/CodeAlpha_project_captchaintegration/assets/121280644/c176aa13-d65c-46f7-95cb-179fa8840ea5)
 
+check demo here: https://priya7319.github.io/CodeAlpha_project_captchaintegration/
+
 Highlights:
 
 usage of google recaptcha.
